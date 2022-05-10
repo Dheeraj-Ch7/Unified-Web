@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2.983" tests="6" errors="0" skipped="5" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="16.0.2+7-67"/>
+    <property name="sun.boot.library.path" value="C:\Users\hp\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Git\.git\.git\UnifiedWeb_Automation"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Git\.git\.git\UnifiedWeb_Automation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="16.0.2+7-67"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\hp\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Git\.git\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7715443229597305977.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\hp\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/hp/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin/server;C:/Users/hp/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_91\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Program Files\TestProject Agent;C:\Program Files (x86)\BrowserStackLocal\;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\eclipse\java-2021-06\eclipse;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="60.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\hp"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="16"/>
+    <property name="user.name" value="hp"/>
+    <property name="java.class.path" value="C:\Users\hp\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.0.20210603-1206\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="C:\Users\hp\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="16.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Git\.git\.git\UnifiedWeb_Automation\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="setup" classname="com.unified.infinity.uitest.admin.UnifiedTests" time="2.887">
+    <failure message="session not created: This version of ChromeDriver only supports Chrome version 91&#10;Current browser version is 99.0.4844.82 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SMARTGIG01&apos;, ip: &apos;192.168.0.123&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x00852DB3+2502067]&#10;	Ordinal0 [0x007EC5B1+2082225]&#10;	Ordinal0 [0x006F2498+1057944]&#10;	Ordinal0 [0x007105DA+1181146]&#10;	Ordinal0 [0x0070C43C+1164348]&#10;	Ordinal0 [0x00709C73+1154163]&#10;	Ordinal0 [0x00739A22+1350178]&#10;	Ordinal0 [0x0073967A+1349242]&#10;	Ordinal0 [0x00735BEB+1334251]&#10;	Ordinal0 [0x00712174+1188212]&#10;	Ordinal0 [0x00713009+1191945]&#10;	GetHandleVerifier [0x009CEC5C+1511084]&#10;	GetHandleVerifier [0x00A78522+2205554]&#10;	GetHandleVerifier [0x008D3393+480739]&#10;	GetHandleVerifier [0x008D2579+477129]&#10;	Ordinal0 [0x007F1E5D+2104925]&#10;	Ordinal0 [0x007F63F8+2122744]&#10;	Ordinal0 [0x007F6537+2123063]&#10;	Ordinal0 [0x007FEE53+2158163]&#10;	BaseThreadInitThunk [0x76DB6739+25]&#10;	RtlGetFullPathName_UEx [0x778D8E7F+1215]&#10;	RtlGetFullPathName_UEx [0x778D8E4D+1165]&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 99.0.4844.82 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SMARTGIG01', ip: '192.168.0.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00852DB3+2502067]
+	Ordinal0 [0x007EC5B1+2082225]
+	Ordinal0 [0x006F2498+1057944]
+	Ordinal0 [0x007105DA+1181146]
+	Ordinal0 [0x0070C43C+1164348]
+	Ordinal0 [0x00709C73+1154163]
+	Ordinal0 [0x00739A22+1350178]
+	Ordinal0 [0x0073967A+1349242]
+	Ordinal0 [0x00735BEB+1334251]
+	Ordinal0 [0x00712174+1188212]
+	Ordinal0 [0x00713009+1191945]
+	GetHandleVerifier [0x009CEC5C+1511084]
+	GetHandleVerifier [0x00A78522+2205554]
+	GetHandleVerifier [0x008D3393+480739]
+	GetHandleVerifier [0x008D2579+477129]
+	Ordinal0 [0x007F1E5D+2104925]
+	Ordinal0 [0x007F63F8+2122744]
+	Ordinal0 [0x007F6537+2123063]
+	Ordinal0 [0x007FEE53+2158163]
+	BaseThreadInitThunk [0x76DB6739+25]
+	RtlGetFullPathName_UEx [0x778D8E7F+1215]
+	RtlGetFullPathName_UEx [0x778D8E4D+1165]
+
+</failure>
+    <system-err><![CDATA[Mar 23, 2022 7:32:45 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 42442
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="methodsetup" classname="com.unified.infinity.uitest.admin.UnifiedTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="LoginPage" classname="com.unified.infinity.uitest.admin.UnifiedTests" time="0">
+    <skipped message="session not created: This version of ChromeDriver only supports Chrome version 91&#10;Current browser version is 99.0.4844.82 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SMARTGIG01&apos;, ip: &apos;192.168.0.123&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x00852DB3+2502067]&#10;	Ordinal0 [0x007EC5B1+2082225]&#10;	Ordinal0 [0x006F2498+1057944]&#10;	Ordinal0 [0x007105DA+1181146]&#10;	Ordinal0 [0x0070C43C+1164348]&#10;	Ordinal0 [0x00709C73+1154163]&#10;	Ordinal0 [0x00739A22+1350178]&#10;	Ordinal0 [0x0073967A+1349242]&#10;	Ordinal0 [0x00735BEB+1334251]&#10;	Ordinal0 [0x00712174+1188212]&#10;	Ordinal0 [0x00713009+1191945]&#10;	GetHandleVerifier [0x009CEC5C+1511084]&#10;	GetHandleVerifier [0x00A78522+2205554]&#10;	GetHandleVerifier [0x008D3393+480739]&#10;	GetHandleVerifier [0x008D2579+477129]&#10;	Ordinal0 [0x007F1E5D+2104925]&#10;	Ordinal0 [0x007F63F8+2122744]&#10;	Ordinal0 [0x007F6537+2123063]&#10;	Ordinal0 [0x007FEE53+2158163]&#10;	BaseThreadInitThunk [0x76DB6739+25]&#10;	RtlGetFullPathName_UEx [0x778D8E7F+1215]&#10;	RtlGetFullPathName_UEx [0x778D8E4D+1165]&#10;"/>
+  </testcase>
+  <testcase name="EndMethod" classname="com.unified.infinity.uitest.admin.UnifiedTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="closebrowser" classname="com.unified.infinity.uitest.admin.UnifiedTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="endSuite" classname="com.unified.infinity.uitest.admin.UnifiedTests" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,46 @@
+{
+  "name": "Automation",
+  "grade": 11,
+  "subject": "CHEM",
+  "teacher": "609393c5ea83f1a21e90d0ed",
+  "objectives": [
+    "Line one",
+    "line second"
+  ],
+  "notes": {},
+  "assignment": {},
+ 
+  "startDate": 1629117000,
+  "startDateValue": 1629117000,
+  "endDate": 1629120600,
+  "startedAt": 0,
+  "endedAt": 0,
+  "startTime": 1629117000,
+  "endTime": 1629120600,
+  "timeDuration": 60,
+  "meeting": {},
+  "recording": {},
+  "subscription": "free",
+  "bufferTime": 10,
+  "notificationBuffer": 10,
+  "startBufferTime": 10,
+  "endBufferTime": 10,
+ 
+  "exams": [
+   
+    "NEET"
+   
+  ],
+  "boards": [
+    "NCERT"
+  ],
+  "language": "english",
+  "isFeatured": true,
+  "global": true,
+  "featureDescription": "Most popular class",
+  "status": "active",
+  "tenant": "infinitylearn",
+  "createdBy": "name",
+  "updatedBy": "name",
+  "isActive": true
+}
