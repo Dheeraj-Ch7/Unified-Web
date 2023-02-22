@@ -27,7 +27,6 @@ public class UnifiedProfile extends DriverManager
 	private ThreadLocal<String> testName = new ThreadLocal<>();
 	static ExtentTest test;
 	static ExtentReports report;
-
 	
 	@BeforeMethod
 	public void methodsetup() throws Exception{
@@ -41,20 +40,110 @@ public class UnifiedProfile extends DriverManager
 		for (Integer currentKey : testData.keySet()) {
 			dataProvider.add(new Object[] { testData.get(currentKey)});		
 		}
-		return dataProvider.iterator();}
-	
+		return dataProvider.iterator();}	
 //	Profile Test Cases
-	@Test(priority=1,dataProvider = "getData")
-	public void Profile(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	
+	@Test(priority=0,dataProvider = "getData")
+	public void Onlylogin(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
 	{			
 		String sResult = null;
-		ExtentTestManager.startTest("Profile Page Verification","");		
+		ExtentTestManager.startTest("just  login","");		
 		UnifiedLibrary.WebBrowser(testdata);
 		
 		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
-		if (sResult.equalsIgnoreCase("False")) {TearDown(); };
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		//sResult = UnifiedLibrary.UnifiedLogOut(testdata);
+		//if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+	}
+	
+	@Test(priority=1,dataProvider = "getData")
+	public void ChangeProfilePicture(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	{			
+		String sResult = null;
+		ExtentTestManager.startTest("Profile Picture Update","");		
+		UnifiedLibrary.WebBrowser(testdata);
+		
+		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		sResult = UnifiedLibrary.ChangeProfilepicture(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		sResult = UnifiedLibrary.UnifiedLogOut(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+	}
+	
+	@Test(priority=2,dataProvider = "getData")
+	public void ChangePassword(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	{			
+		String sResult = null;
+		ExtentTestManager.startTest("Change password","");		
+		UnifiedLibrary.WebBrowser(testdata);
+		
+		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
 		
 		sResult = UnifiedLibrary.ChangePassword(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		sResult = UnifiedLibrary.UnifiedLogOut(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+	}
+	
+	@Test(priority=3,dataProvider = "getData",enabled=false)
+	public void ChangePasswordOTP(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	{			
+		String sResult = null;
+		ExtentTestManager.startTest("Change Password with OTP","");		
+		UnifiedLibrary.WebBrowser(testdata);
+		
+		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		sResult = UnifiedLibrary.ChangePasswordwithOTP(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		
+		sResult = UnifiedLibrary.UnifiedLogOut(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+	}
+	
+	@Test(priority=4,dataProvider = "getData")
+	public void ResetPassWithIncorrectData(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	{			
+		String sResult = null;
+		ExtentTestManager.startTest("Reset Password with incorrect data","");		
+		UnifiedLibrary.WebBrowser(testdata);
+		
+		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		sResult = UnifiedLibrary.ResetPassWithIncorrectData(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }	
+	 }
+	@Test(priority=4,dataProvider = "getData")
+	public void ResetPassWithIncorrectExistingPass(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	{			
+		String sResult = null;
+		ExtentTestManager.startTest("Reset Password with incorrect existing password","");		
+		UnifiedLibrary.WebBrowser(testdata);
+		
+		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		
+		sResult = UnifiedLibrary.ResetPassWithIncorrectExistingPass(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); }
+		}
+	
+	@Test(priority=5,dataProvider = "getData")
+	public void ProfilePage(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	{			
+		String sResult = null;
+		ExtentTestManager.startTest("Profile Page-Grades,Streams and Boards Verification","");		
+		UnifiedLibrary.WebBrowser(testdata);
+		
+		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
 		if (sResult.equalsIgnoreCase("False")) {TearDown(); };
 		
 		sResult = UnifiedLibrary.VerifyGrades(testdata);
@@ -65,10 +154,13 @@ public class UnifiedProfile extends DriverManager
 	
 		sResult = UnifiedLibrary.VerifyBoard(testdata);
 		if (sResult.equalsIgnoreCase("False")) {TearDown(); };	
+		
+		sResult = UnifiedLibrary.UnifiedLogOut(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); };	
 	}
 	
-	@Test(priority=0,dataProvider = "getData")
-	public void SelectGrade(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	@Test(priority=6, dataProvider = "getData", enabled = false)
+	public void SelectGrade11(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
 	{	
 		String sResult = null;
 		ExtentTestManager.startTest("Grade 11 Verfication","");		
@@ -79,7 +171,29 @@ public class UnifiedProfile extends DriverManager
 		
 		sResult = UnifiedLibrary.Select11Grade(testdata);
 		if (sResult.equalsIgnoreCase("False")) {TearDown(); };
+		
+		sResult = UnifiedLibrary.UnifiedLogOut(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); };	
 	}
+	
+	@Test(priority=7,dataProvider = "getData")
+	public void ProfileUpdate(HashMap<String, String> testdata) throws Exception			//@Test(enabled=false)
+	{			
+		String sResult = null;
+		ExtentTestManager.startTest("Profile Update","");		
+		UnifiedLibrary.WebBrowser(testdata);
+		
+		sResult = UnifiedLibrary.UnifiedSignIn(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); };
+		
+		sResult = UnifiedLibrary.ProfileUpdate(testdata);
+		if (sResult.equalsIgnoreCase("False")) {TearDown(); };
+		
+	//	sResult = UnifiedLibrary.UnifiedLogOut(testdata);
+	//	if (sResult.equalsIgnoreCase("False")) {TearDown(); };	
+		
+	}
+	
 	
 	private void TearDown() throws Exception {
 		throw new Exception("Test can't continue,  fail here!");

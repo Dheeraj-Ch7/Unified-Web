@@ -1,6 +1,8 @@
 package com.unified.infinity.utils;
 
+import java.io.File;
 import java.net.SocketTimeoutException;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -76,8 +78,8 @@ public class WebInteractUtil extends DriverManager {
 		
 		try {
 			FluentWait<WebDriver> fluentWait = new FluentWait<>(DriverManager.WEB_DRIVER_THREAD.get())
-					.withTimeout(timeout, TimeUnit.SECONDS)
-					.pollingEvery(1000, TimeUnit.MICROSECONDS)
+					.withTimeout(Duration.ofSeconds(60))
+					.pollingEvery(Duration.ofSeconds(5))
 					.ignoring(Exception.class);
 			fluentWait.until(ExpectedConditions.elementToBeClickable(webElement));
 			LoggerUtil.logConsoleMessage("WebElement "+webElement.toString().split("xpath: //")[1] +" was Visible");
@@ -94,8 +96,8 @@ public class WebInteractUtil extends DriverManager {
 		
 		try {
 			FluentWait<WebDriver> fluentWait = new FluentWait<>(DriverManager.WEB_DRIVER_THREAD.get())
-					.withTimeout(timeout, TimeUnit.SECONDS)
-					.pollingEvery(2000, TimeUnit.MICROSECONDS)
+					.withTimeout(Duration.ofSeconds(60))
+					.pollingEvery(Duration.ofSeconds(5))
 					.ignoring(Exception.class);
 			fluentWait.until(ExpectedConditions.elementToBeClickable(webElement));
 			LoggerUtil.logConsoleMessage("WebElement "+webElement.toString().split("xpath: //")[1] +" was Present");
@@ -165,9 +167,20 @@ public class WebInteractUtil extends DriverManager {
 			}
 			}
 		}	
-	
+//	Added for Invoice downloaded file
 	public static void TearDown(String Message) throws Exception {
 		throw new Exception("Test can't continue, fail here!");
 	}
+/*	public static boolean isFileDownloaded(String downloadPath, String fileName) {
+		boolean flag = false;
+	    File dir = new File(downloadPath);
+	    File[] dir_contents = dir.listFiles();
+	  	    
+	    for (int i = 0; i < dir_contents.length; i++) {
+	        if (dir_contents[i].getName().equals(fileName))
+	            return flag=true;
+	            }
 
+	    return flag;
+	}*/
 }

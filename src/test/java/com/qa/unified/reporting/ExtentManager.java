@@ -29,7 +29,7 @@ public class ExtentManager extends DriverManager {
 	          extent = new ExtentReports(workingDir+"\\ExtentReports\\Unified-"+df1.format(new Date())+"\\ExtentTest -"+df.format(new Date())+".html", true);
 	          extent.loadConfig(new File(workingDir+"\\config-report.xml"));
 	          
-	      }
+	      }	
 	      return extent;
 	      
 	  }}

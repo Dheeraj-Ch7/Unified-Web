@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.unified.infinity.uitest.admin.UnifiedTests">
+      <class name="com.unified.infinity.uitest.admin.UnifiedSignInUp">
         <methods>
-          <include name="endSuite"/>
+          <include name="SignUP2"/>
           <include name="methodsetup"/>
-          <include name="FreeMasterClass"/>
+          <include name="sendEmail"/>
+          <include name="endSuite"/>
           <include name="EndMethod"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.unified.infinity.uitest.admin.UnifiedTests -->
+      </class> <!-- com.unified.infinity.uitest.admin.UnifiedSignInUp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
